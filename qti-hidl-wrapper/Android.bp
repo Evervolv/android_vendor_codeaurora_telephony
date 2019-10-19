@@ -1,0 +1,17 @@
+
+java_library {
+    name: "qti-telephony-hidl-wrapper",
+    installable: true,
+    static_libs: [
+        "android.hidl.base-V1.0-java",
+        "android.hidl.manager-V1.0-java",
+    ],
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "qti_telephony_hidl_wrapper.xml",
+    src: "qti_telephony_hidl_wrapper.xml",
+    sub_dir: "permissions",
+    product_specific: true,
+}
